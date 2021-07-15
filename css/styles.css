@@ -37,3 +37,17 @@ body {
 .navbar-dark {
     background-color: #512DA8;
 }
+
+#mycarousel{
+    background-color: rgb(150, 64, 231);
+}
+
+.carousel-item img {
+    width: 250px;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
