@@ -59,3 +59,6 @@ body {
 
 #loginModal .modal-body, #reserveTableModal .modal-body {
   background: #d1C4e9; }
+
+#loginModal .close, #reserveTableModal .close {
+  color: floralwhite; }

@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#mycarousel").carousel( { interval: 2000 } );
-   
+
     $("#carouselButton").click(function()
     {
         if( $("#carouselButton").children("span").hasClass("fa-pause") ) {
@@ -16,6 +16,8 @@ $(document).ready(function(){
         
     });
 
+    $('[data-toggle="tooltip"]').tooltip();
+
 
     $("#loginButton").click(function() {
         $("#loginModal").modal('show');
@@ -23,6 +25,14 @@ $(document).ready(function(){
 
     $("#reserveTableButton").click(function() {
         $("#reserveTableModal").modal('show');
+    });
+
+    $(".reserveTableDismiss").click(function() {
+        $("#reserveTableModal").modal('hide');
+    });
+
+    $(".closeLoginModal").click(function() {
+        $("#loginModal").modal('hide');
     });
     
 });
